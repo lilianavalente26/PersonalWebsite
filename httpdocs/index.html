@@ -2,7 +2,7 @@
 <html lang="pt" data-theme="valentine">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>olá, eu sou a Lili! </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -11,56 +11,55 @@
 </head>
 <body class="bg-base-400">
     <!-- Navbar -->
-    <div class="navbar bg-neutral text-neutral-content py-6 ">
-        <div class="flex-1 ">
-          <!-- Applied Artic Didone font and increased size -->
-          <a href="./index.html" class="btn btn-ghost text-5xl kalnia-regular px-4 mx-16">LILIANA VALENTE</a>
+    <div class="navbar bg-neutral text-neutral-content py-4 px-4">
+        <div class="flex-1">
+          <a href="./index.html" class="btn btn-ghost text-4xl lg:text-5xl kalnia-regular">LILIANA VALENTE</a>
         </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-20">
+        <div class="flex-none lg:hidden">
+          <details class="dropdown">
+            <summary class="btn btn-ghost">☰</summary>
+            <ul class="menu menu-sm dropdown-content mt-3 z-[50] p-2 shadow bg-neutral rounded-box w-52 right-0">
+              <li><a href="./pages/blogue.html">Blog</a></li>
+              <li><a href="./pages/projetos.html">Projetos</a></li>
+              <li><a href="./pages/experiencia.html">Experiência</a></li>
+            </ul>
+          </details>
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="menu menu-horizontal px-10">
             <li><a href="./pages/blogue.html">Blog</a></li>
             <li><a href="./pages/projetos.html">Projetos</a></li>
             <li><a href="./pages/experiencia.html">Experiência</a></li>
           </ul>
         </div>
-      </div>
+    </div>
+
     <!-- Main Content -->
-    <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
-          <img
-            src="./img/lili.png"
-            class="max-w-sm rounded-lg shadow-2xl" />
-            <div class="px-10">
-
-                <h1 class="text-7xl font-bold py-10">Olá!</h1>
-
-                <div class="chat chat-start ">
-                    <div class="chat-bubble">
-                    Sou a Liliana, uma estudante de engenharia informática extrovertida e com vontade de aprender.
-                    </div>
-                </div>
+    <div class="hero bg-base-200 min-h-screen py-10 px-4">
+        <div class="hero-content flex flex-col lg:flex-row items-center text-center lg:text-left">
+          <img src="./img/lili.png" class="w-48 sm:w-64 lg:max-w-sm rounded-lg shadow-2xl" />
+          <div class="px-4 lg:px-10">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold py-6">Olá!</h1>
 
                 <div class="chat chat-start">
-                    <div class="chat-bubble">
-                    É com a noção de que "só sei que nada sei" com que encaro a vida e os desafios profissionais, mostrando-me sempre disposta a adquirir novos conhecimentos e competências.
-                    </div>
+                    <div class="chat-bubble text-lg">Sou a Liliana, uma estudante de engenharia informática extrovertida e com vontade de aprender.</div>
+                </div>
+
+                <div class="chat chat-start mt-4">
+                    <div class="chat-bubble text-lg">É com a noção de que "só sei que nada sei" com que encaro a vida e os desafios profissionais, mostrando-me sempre disposta a adquirir novos conhecimentos e competências.</div>
                 </div>
                 
                 <!-- Botão alinhado abaixo das chat-bubbles -->
-                <div class="chat chat-start py-10">
-                    <button class="btn btn-primary">
-                    Fala comigo
-                    </button>
+                <div class="mt-6 flex justify-center lg:justify-start">
+                    <button class="btn btn-primary w-full sm:w-auto">Fala comigo</button>
                 </div>
-            </div>
+          </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="p-10 bg-neutral text-neutral-content">
-        <div>
-            <p>© 2025 Liliana Valente</p>
-        </div>
+    <footer class="p-6 bg-neutral text-neutral-content text-center">
+        <p>© 2025 Liliana Valente</p>
     </footer>
 </body>
 </html>
